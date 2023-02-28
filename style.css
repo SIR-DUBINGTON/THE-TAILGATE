@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+body {
+  background-color: #add8e6;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.button {
+  margin: 0;
+  display: block;
+  width: 125px;
+  padding: 15px 50px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.columnThread {
+  margin: auto;
+  width: 600px;
+  margin-top: 50px;
+}
+
+.columnThread a {
+  margin-bottom: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.leadParagraph {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  color: white;
+  margin-bottom: 45px;
+}
+
+.squared {
+  background-color: #f94449;
+}
+
+.rounded {
+  border-radius: 10px;
+  background-color: #f94449;
+  margin-bottom: 40px;
+}
+
+.rounded:hover {
+  background-color: crimson;
+}
+
+.header {
+  padding: 36px;
+  font-size: 40px;
+}
+
+.desktop-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 50px;
+  margin: 10px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  margin-bottom: 4rem;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.video iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.centralise {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.videobox {
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+  background-color: #f94449;
+  border-radius: 10px;
+}
+
+.select-dropdown {
+  background-color: #f94449;
+  border: 2px solid white;
+  padding: 8px;
+  color: white;
+  border-radius: 6px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: gainsboro;
+  background-color: gainsboro;
+}
+
+.reply {
+  text-align: right;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.returns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Footer */
+.page-footer {
+  background-color: #f94449;
+  color: white;
+  padding: 1rem 0;
+}
+.footer-column-container {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 1rem;
+  width: 900px;
+}
+.footer-column li {
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+.footer-column ul {
+  padding: 0;
+}
+.footer-column a {
+  color: white;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.logon {
+  text-align: center;
+  padding: 20px;
+}
+
+.logon-button {
+  margin: 0;
+  display: block;
+  width: 200px;
+  padding: 15px 50px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  img.button {
+    width: 75px;
+    padding: 0 15px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation {
+    padding-bottom: 16px;
+  }
+
+  .columnThread {
+    margin: auto;
+    width: 325px;
+    margin-top: 50px;
+  }
+
+  .nav-list a {
+    text-align: center;
+  }
+
+  .select-dropdown {
+    display: block;
+    /* 
+          Increasing bottom margin won't 
+          add space below dropdown and 
+          navigation, hence the padding 
+          applied to the navigation above
+        */
+    margin: 16px auto 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  .page-footer {
+    background-color: #f94449;
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-column-container {
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid white;
+    display: flex;
+    padding-bottom: 1rem;
+    width: 200px;
+    margin: auto;
+  }
+
+  .footer-column li {
+    margin: 0.5rem 0;
+    list-style-type: none;
+  }
+
+  .footer-column ul {
+    padding: 0;
+  }
+
+  .footer-column a {
+    color: white;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
